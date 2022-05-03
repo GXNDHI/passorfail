@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,p,correct,x,wrong,y,score;
+	
+	cout<<"enter the no of questions"<<endl;
+	cin>>t>>endl;
+	
+	cout<<"enter the pass marks"<<endl;
+	cin>>p>>endl;
+	
+	cout<<"enter the no of questions correct"endl;
+	cin>>x>>endl;
+	
+	y=t-x;
+	correct=x*3;
+	wrong=y*(-1);
+	score=correct + wrong;
+	
+	if(score>=p)
+	cout<<"pass"endl;
+	
+	else
+	cout<<"fail";
+	
+	return 0;
+}
